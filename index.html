@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolução dos Testes - Target Sistemas</title>
+
+  <style>
+    * {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .test {
+      /* padding: 2rem; */
+      border-bottom: 1px solid gray;
+      padding: 1.4rem  2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+      align-items: flex-start;
+    }
+    .form {
+      display: flex; 
+      gap: 1rem;
+    }
+    .input {
+      padding: .4rem .8rem;
+      background-color: azure;
+      border-radius: 8px;
+    }
+    .button {
+      padding: .4rem .8rem;
+      background-color: rgb(143, 169, 216);
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="test">
+    <h2>Questão 1</h2>
+    <p>Resposta: ao final do processamento, o valor da variável SOMA será 91.</p>
+  </div>
+
+  <div class="test">
+    <h2>Questão 2</h2>
+    <p>Informe um número para verificar se pertence à sequência Fibonacci</p>
+    <form class="form">
+      <input class="input" type="number" placeholder="Digite um número" id="numberInput">
+      <button class="button" id="numberInput" onclick="checkFibonacci(event)">Verificar</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <div class="test">
+    <h2>Questão 3</h2>
+    <p>Calcular faturamento de Agosto/2024</p>
+    <button class="button" id="calc">Calcular</button>
+
+    <div>
+      <p>O menor valor de faturamento: <span id="lowest"></span></p>
+      <p>O maior valor de faturamento <span id="highest"></span></p>
+      <p>Dias com Faturamento Superior à Média <span id="daysAboveAverage"></span></p>
+    </div>
+  </div>
+
+  <div class="test">
+    <h2>Questão 04</h2>
+    <ul>
+      <li>SP - R$67.836,43 (<span id="sp"></span>)</li>
+      <li>RJ - R$36.678,66 (<span id="rj"></span>)</li>
+      <li>MG - R$29.229,88 (<span id="mg"></span>)</li>
+      <li>ES - R$27.165,48 (<span id="es"></span>)</li>
+      <li>Outros - R$19.849,53 (<span id="others"></span>)</li>
+    </ul>
+  </div>
+
+  <div class="test">
+    <h2>Questão 05</h2>
+    <form class="form">
+      <input class="input" type="text" placeholder="Digite um texto qualquer" id="stringInput">
+      <button class="button" onclick="handleClick(event)" id="reverseButton">Inverter</button>
+    </form>
+
+    <p>Texto Invertido: <span id="reversedText"></span></p>
+  </div>
+
+  <script src="src/test01.js"></script>
+  <script src="src/test02.js"></script>
+  <script src="src/test03.js"></script>
+  <script src="src/test04.js"></script>
+  <script src="src/test05.js"></script>
+</body>
+</html>

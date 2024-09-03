@@ -7,5 +7,5 @@ while(k < indice ) {
   soma = soma + k;
 };
 
-console.log(soma)
+console.log(`Questão 1: O valor da variável SOMA será: ${soma}`)
 // Resposta: 91

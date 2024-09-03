@@ -18,7 +18,7 @@ const calculatePercentage = revenue => {
 };
 
 const percentages = calculatePercentage(revenuesPerState);
-console.log('Percentual de Representação por Estado:');
+console.log('Questão 4: Percentual de Representação por Estado:');
 
 for(const state in percentages) {
   console.log(`${state}: ${percentages[state]}`)
@@ -31,4 +31,5 @@ const updatePage = () => {
   document.getElementById('es').textContent = percentages.ES;
   document.getElementById('others').textContent = percentages.Outros;
 };
+
 document.addEventListener('DOMContentLoaded', updatePage);

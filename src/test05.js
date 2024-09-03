@@ -12,6 +12,6 @@ const handleClick = (event) => {
   const reversed = reverseString(input);
 
   document.getElementById('reversedText').textContent = reversed;
-  console.log(reversed)
+  console.log(`Questão 5: Texto invertido: ${reversed}`)
 };
 

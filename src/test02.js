@@ -34,5 +34,5 @@ const checkFibonacci = event => {
   }
 
   document.getElementById('result').innerText = resultMessage;
-  console.log(resultMessage);
+  console.log(`Questão 2: ${resultMessage}`);
 };

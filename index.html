@@ -26,6 +26,10 @@
       gap: .4rem;
       align-items: flex-start;
     }
+    .result {
+      font-weight: 700;
+      color: blue;
+    }
     .form {
       display: flex; 
       gap: 1rem;
@@ -34,6 +38,7 @@
       padding: .4rem .8rem;
       background-color: azure;
       border-radius: 8px;
+      border: 1px solid gray;
     }
     .button {
       padding: .4rem .8rem;
@@ -46,7 +51,7 @@
 <body>
   <div class="test">
     <h2>Questão 1</h2>
-    <p>Resposta: ao final do processamento, o valor da variável SOMA será 91.</p>
+    <p class="result">Resposta: ao final do processamento, o valor da variável SOMA será 91.</p>
   </div>
 
   <div class="test">
@@ -56,29 +61,28 @@
       <input class="input" type="number" placeholder="Digite um número" id="numberInput">
       <button class="button" id="numberInput" onclick="checkFibonacci(event)">Verificar</button>
     </form>
-    <div id="result"></div>
+    <div class="result" id="result"></div>
   </div>
 
   <div class="test">
     <h2>Questão 3</h2>
-    <p>Calcular faturamento de Agosto/2024</p>
-    <button class="button" id="calc">Calcular</button>
+    <p>Calcular faturamento</p>
 
-    <div>
-      <p>O menor valor de faturamento: <span id="lowest"></span></p>
-      <p>O maior valor de faturamento <span id="highest"></span></p>
-      <p>Dias com Faturamento Superior à Média <span id="daysAboveAverage"></span></p>
-    </div>
+    <ul>
+      <li>O menor valor de faturamento: <span class="result" id="lowest"></span></li>
+      <li>O maior valor de faturamento: <span class="result" id="highest"></span></li>
+      <li>Dias com Faturamento Superior à Média: <span class="result" id="daysAboveAverage"></span></li>
+    </ul>
   </div>
 
   <div class="test">
     <h2>Questão 04</h2>
     <ul>
-      <li>SP - R$67.836,43 (<span id="sp"></span>)</li>
-      <li>RJ - R$36.678,66 (<span id="rj"></span>)</li>
-      <li>MG - R$29.229,88 (<span id="mg"></span>)</li>
-      <li>ES - R$27.165,48 (<span id="es"></span>)</li>
-      <li>Outros - R$19.849,53 (<span id="others"></span>)</li>
+      <li>SP - R$67.836,43 (<span class="result" id="sp"></span>)</li>
+      <li>RJ - R$36.678,66 (<span class="result" id="rj"></span>)</li>
+      <li>MG - R$29.229,88 (<span class="result" id="mg"></span>)</li>
+      <li>ES - R$27.165,48 (<span class="result" id="es"></span>)</li>
+      <li>Outros - R$19.849,53 (<span class="result" id="others"></span>)</li>
     </ul>
   </div>
 
@@ -89,7 +93,7 @@
       <button class="button" onclick="handleClick(event)" id="reverseButton">Inverter</button>
     </form>
 
-    <p>Texto Invertido: <span id="reversedText"></span></p>
+    <p>Texto Invertido: <span class="result" id="reversedText"></span></p>
   </div>
 
   <script src="src/test01.js"></script>
